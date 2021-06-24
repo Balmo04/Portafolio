@@ -3,6 +3,10 @@
     padding: 0%;
     box-sizing: border-box;
 }
+.position{
+    position: relative;
+    top: 10vh;
+}
 .bg-black{
     background-color: rgb(7, 7, 7);
     height: 10vh;
@@ -12,10 +16,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.position{
-    position: relative;
-    top: 10vh;
 }
 
 .menu{
@@ -150,4 +150,40 @@
     width: 2.4rem;
     margin-right: 12px;
 }
+/*Seccion de proyectos*/
+.bg-proyects{
+    background-color: rgb(5, 19, 65);
+    height: 90vh;
+    font: normal 20px/2.4 "Open Sans", Helvetica, sans-serif;
+    color: rgba(255,255,255,0.9);
+}
+/*DIV CONTENEDOR EN HTML*/
+.container-template{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/**DIV CONTENDOR EN JS**/
+.space-proyect{
+    width: 33.3333vh;
+}
+/**DIV NUM Y PREVIEW**/
+.center-proyect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.preview-proyect{
+    height: 8rem;
+}
 
+/**DIV TITLE Y BOTONES**/
+.code-template{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-white{
+    filter: invert(100%);
+}
