@@ -5,24 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <link rel="shortcut icon" href="img/favicon.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <heder>
+    <header>
         <nav class="bg-black">
             <h2 class="txt-white">Portafolio</h2>
-            <ul class="menu">
-                <li class="menu-item">Sobre mi</li>
-                <li class="menu-item">Portafolio</li>
-            </ul>
-        </nav>
-    </heder>
+            <button id="btn-menu" class="btn-menu-style">
+                <img class="img-size img-white" src="img/menu.svg" alt="menu">
+                <div id="section-list" class="menu hidden position">
+                    <a class="menu-item" href="#presentation">Home</a>
+                    <a class="menu-item" href="#about-me">Sobre mi</a>
+                    <a class="menu-item" href="#portfolio">Portafolio</a>
+                </div>
+            </button>
+        </nav> 
+    </header>
     <main>
         <section id="presentation" class="bg-start position">
                 <hgroup class="title-position">
                     <h4 class="txt-blue">¡Hola! </h4>
                     <h2 class="txt-light-blue">Soy Emerson</h2>
-                    <h3 class="txt-black">Web Designer & Developer</h3>
+                    <h3 class="txt-black">Junior Web Designer & Developer</h3>
                 </hgroup>
         </section>
         <section id="about-me" class="bg-blue template-about-me position">
@@ -30,7 +35,7 @@
                 <img src="img/usuario-de-perfil.svg" alt="Usuario" class="user">
                 <hgroup>
                     <h2 class="txt-light-blue-2">Emerson Arévalo</h2>
-                    <h3 class="txt-black-2">Web Designer & Developer</h3>
+                    <h3 class="txt-black-2">Junior Web Designer & Developer</h3>
                 </hgroup>
             </div>
             <div class="info">
@@ -48,10 +53,11 @@
                         <img src="img/twitter.svg" alt="X" class="img-size">
                         <a href="https://twitter.com" class="a-style" target="_blank">Twitter</a>
                     </button>
-                    <button id="gmail" class="btn-style">
+                    <button id="gmail" class="btn-style portapapeles" data-clipboard-text="balmore04ebao@gmail.com">
                         <img src="img/gmail.svg" alt="X" class="img-size">
                         Gmail
-                    </button>
+                        <p class="alert position-msg hidden">Copiado!!</p>
+                    </button>                  
                     <button id="github" class="btn-style">
                         <img src="img/github.svg" alt="X" class="img-size">
                         <a href="https://github.com/Emerson04-sv" class="a-style" target="_blank">GitHub</a>    
@@ -64,6 +70,9 @@
         </section>
     </main>
     <footer></footer>
-    <script src="script.js"></script>
+    <script src="js/objects.js"></script>   
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/portapapeles.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
