@@ -1,17 +1,10 @@
 const btnMenu = document.getElementById("btn-menu");
+const imgMenu =  document.getElementById("img-menu");
 const sectionList = document.getElementById("section-list")
 const container = document.getElementById("container-proyect");
 const numProyect = document.getElementsByClassName("num-proyect");
-
 let isPress = false;
-/* 
-const preview = document.getElementsByClassName("preview-proyect"); 
-const title = document.getElementsByClassName("title-proyect");
-const view = document.getElementsByClassName("view-proyect");
-const imgView = document.getElementsByClassName("img-view-proyect");
-const code = document.getElementsByClassName("code-proyect");
-const imgCode = document.getElementsByClassName("img-code-proyect");
- */
+
 addProyect();
 function addProyect (){
     for(let i=0; i<proyects.length; i++){
@@ -49,9 +42,10 @@ function addProyect (){
 btnMenu.addEventListener("click", function(){
     isPress=!isPress;
     if(isPress){
-        sectionList.classList.replace("hidden","visible");
+        imgMenu.src="img/close.png";
     }
     else{
-        sectionList.classList.replace("visible","hidden");
+        imgMenu.src="img/menu.svg";
     }
+    sectionList.classList.toggle("hidden");
 });
